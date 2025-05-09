@@ -1,0 +1,15 @@
+.input{
+    width: 2.87rem;
+    height: 2.87rem;
+    border-radius: .43rem;
+
+    background-color:#ebebfc;
+    border: 2px solid #6363db;
+    color: #6363db;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+}

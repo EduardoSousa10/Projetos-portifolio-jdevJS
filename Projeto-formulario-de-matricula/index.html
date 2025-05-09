@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrelas do amanhã</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <main>
+            <div class="main-container">
+                <div class="back">
+                    <img src="assets/icons/arrow-left-02.svg" alt=" seta para esquerda">
+                    <span>Voltar</span>
+                </div>
+                <h1>Formulário de matrícula</h1>
+                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+                <form enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança.</legend>
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome completo</label>
+                            <input id="fullname" type="text" name="fullname" placeholder="Qual é o nome da criança">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="birth">Data de nascimento</label>
+                            <input type="date" id="birth"  name="birth" lang="pt-br">
+                        </div>
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select name="gender" id="gender">
+                            <option value="female">Feminino</option>
+                            <option value="male">Masculino</option>
+                            <option value="na">Prefiro não responder</option>
+                            </select>
+                        </div>
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Infromações médicas</label>
+                            <textarea name="medical-info" id="medical-info" cols="30" rows="5" placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (se sim, especifique)"
+                            ></textarea>
+                        </div>
+                        <div class="droparea-wrapper">
+                            <label for="birth-file">Certidão de Nascimento</label>
+                            <div class="dropzone">
+                            <input type="file" id="birthfile" name="birthfile">
+                            
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M34.9552 18.0221C34.97 18.022 34.985 18.022 35 18.022C39.9706 18.022 44 22.0588 44 27.0386C44 31.6796 40.5 35.5016 36 36M34.9552 18.0221C34.9848 17.6921 35 17.3579 35 17.0202C35 10.9339 30.0752 6 24 6C18.2465 6 13.5247 10.4253 13.0408 16.0638M34.9552 18.0221C34.7506 20.2952 33.8572 22.3692 32.4856 24.033M13.0408 16.0638C7.96796 16.5475 4 20.8278 4 26.0366C4 30.8834 7.43552 34.9264 12 35.8546M13.0408 16.0638C13.3565 16.0337 13.6765 16.0183 14 16.0183C16.2516 16.0183 18.3295 16.7639 20.001 18.022" stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24 26V42M24 26C22.5996 26 19.9831 29.9886 19 31M24 26C25.4004 26 28.017 29.9886 29 31" stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+
+                            <p>Clique aqui para <br> selecionar os arquivos</p>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="addres">
+                        <legend>Endereço Resididencial</legend>
+                        <div class="input-wrapper">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" name="cep">
+                        </div>
+
+                        <div class="flex">
+                            <div class="input-wrapper flex-2">
+                                <label for="street">Rua</label>
+                                <input type="text" id="street" name="street" value="Rua das flores" disabled>
+                            </div>
+                            <div class="input-wrapper flex-1">
+                                <label for="number">Número</label>
+                                <input type="number" id="number" name="number">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="input-wrapper flex-2">
+                                <label for="city">Cidade</label>
+                                <input type="text" id="city" name="city" value="São Paulo" disabled>
+                            </div>
+                            <div class="input-wrapper flex-1">
+                                <label for="state">Estado</label>
+                                <input type="text" id="state" name="state" disabled value="SP">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="gardian">
+                        <legend>Informações do Responsavel</legend>
+                        <div class="input-wrapper">
+                            <label for="gardian">Nome do responsável</label>
+                            <input type="text" id="gardian" name="gardian">
+                            <small>Principal responsável legal e contato de emergência</small>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="phone">Telefone</label>
+                            <input type="text" id="phone" name="phone" placeholder="(10) 9 8765-4321">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" name="mail" required autocomplete="off">
+                            <div class="error">
+                                <img src="assets/icons/alert-circle.svg" alt="Ìcone de alerta vermelho">
+                                <span>Insira um E-mail válido</span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="enroll-options">
+                        <legend>Opções de matricúla</legend>
+                        <div class="input-wrapper">
+                            <label> Selecione o turno de estudo</label>
+                            <div class="radio-wrapper">
+                                <div class="radio-inner">
+                                    <div class="radio-image">
+                                        <input type="radio" id="morning" name="study-shift" value="morning">
+                                        <img src="assets/icons/sun-cloud-02.svg" alt="Ìcone de sol com nuvem">
+                                        <label for="morning">Manhã</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="radio-inner">
+                                <div class="radio-image">
+                                    <input type="radio" id="evening" name="study-shift" value="evening">
+                                    <img src="assets/icons/sun-02.svg" alt="Ìcone de sol ">
+                                    <label for="evening">Tarde</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+
+        <aside>
+            <div class="aside-container">
+                <header>
+                    <img src="assets/logo.svg" alt="logo do estrelas do amanhã">
+                    <h2>Porque cada momento <br> de <span>aprendizado</span> conta</h2>
+                    <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+                </header>
+
+                <img id="kids" src="assets/icons/Illustration.svg" alt="Imagem da ilustração das crianças">
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
