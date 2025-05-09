@@ -1,0 +1,32 @@
+.intro{
+    max-width: 21rem;
+    margin-inline: 2rem;
+    padding-top: 2rem;
+    display: grid;
+    justify-content: center;
+    margin-right: 64px;
+    h1{
+        font: var(--logo);
+        color: #FF598B;
+        padding-top: 1rem;
+    }
+    p{
+        font-family: var(--font-familyyy);
+        font-weight: 300;
+        color: var(--text-heading);
+        padding-top: 0rem;
+        line-height: 22px;
+    }
+    img{
+        width: 2.86rem;
+        height: 3rem;
+    }
+}
+.aside{
+    background-image: url(../asstes/images/Background.png) ;
+    background-size: cover;
+    max-width: 25rem;
+    height: 45.5rem;
+    border-radius: .75rem;
+    margin: 1.25rem;
+}

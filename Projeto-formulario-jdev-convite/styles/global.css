@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s, color 0.5s; /* mudei aqui */
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+fieldset{
+    border: none;
+}
+h3{
+    font: var(--Body-Sm);
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+:root{
+
+    /* Colors */
+    --brand-light:#59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1D6FB6;
+
+    --danger:#FF5959;
+
+    --input-base:#1C1F21;
+    --input-stroke:#363B40;
+    --input-placeholder:#869198;
+    --shape-background:#131516;
+    --shape-body:#212427;
+    --shape-button:#2D3136;
+    --shape-hover:#383D42;
+
+    --text-body:#C8CDD0;
+    --text-heading:#F9F9F9;
+    /* Fonts */
+
+    --font-family: "Leckerli One", cursive;
+    --font-familyy: "Baloo 2", sans-serif;
+    --font-familyyy: "Open Sans", sans-serif;
+
+    --logo: 400 2.5rem var(--font-family);
+    
+    --Heading-Md: 700 1.75rem var(--font-familyy);
+    --Heading-Sm: 700 1.125rem var(--font-familyy);
+
+    --Body-Md: 600 1rem var(--font-familyyy);
+    --Body-Sm: 400 .875rem var(--font-familyyy);
+    --Body-Xs: 600 .75rem var(var--font-familyyy);
+}
+.field{
+    border-bottom: 1px solid var(--input-placeholder);
+    margin-bottom: 2.5rem;
+}
+a{
+    color: var(--brand-light);
+}

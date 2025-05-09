@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de convite</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <main>
+                <div class="convite">
+                 <h1 style="padding-bottom: 6.3rem";>Crie seu convite</h1>
+                    <form enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>
+                                <img src="asstes/icons/calendar-new.png" alt="">
+                                <h2>Sobre o evento</h2>
+                            </legend>
+                            <div class="input-wrapper">
+                                <label for="title">Título</label>
+                                <input type="text" name="title" id="title" placeholder="Nome do evento">
+                            </div>
+                            <div class="flex">
+                                <div class="input-wrapper inp-1">
+                                    <label for="start">Início</label>
+                                    <input type="date" id="start" name="start">
+                                </div>
+                                <div class="input-wrapper inp-2">
+                                    <label for="end">Final</label>
+                                    <input type="date" id="end" name="end">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <form class="button-wrapper">
+                            <div class="flex-2">
+                                <div class="radio-wrapper">
+                                    <div class="type">
+                                        <label>Tipo</label>
+                                    </div>
+                                        <div class="radio-input">
+                                            <div class="radio-inner inp-1">
+                                                <label for="home">
+                                                <input type="radio" id="home" name="web">
+                                                    <div class="button">
+                                                        <img src="asstes/icons/building-2.svg" alt="">
+                                                        <span>Presencial</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="radio-inner inp-1">
+                                                <label for="web">
+                                                    <input type="radio" id="home" name="web">
+                                                    <div class="button">
+                                                        <img src="asstes/icons/video.svg" alt="">
+                                                        <span>Online</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                </div>
+                            </div>
+                    
+                              <div class="location-wrapper inp-2">
+                                        <label for="location">Local</label>
+                                        <input type="text" name="location" id="location" placeholder="Link ou endereço">
+                              </div>
+                            </div>
+                            <div class="textarea-wrapper">
+                                <label for="textarea">Descrição</label>
+                                <textarea name="textarea" id="textarea" placeholder="Escreva os detalhes do evento." rows="8"></textarea>
+                            </div>
+                    </form>
+                    
+                    <form class="color-picker">
+                    <fieldset>
+                        <legend>
+                            <img src="asstes/icons/paintbrush-vertical.svg" alt="ícon de um pincel de tinta">
+                            <h2>Personalização</h2>
+                        </legend>
+                            <h3>Cor principal</h3>
+
+                        <div class="colors">
+                            <label>
+                                 <input type="radio" name="color" value="red">
+                                 <span class="color-circle" style="background-color: #59B2FF;"></span>
+                            </label>
+                            <label>
+                                 <input type="radio" name="color" value="blue">
+                                 <span class="color-circle" style="background-color: #6A59FF;"></span>
+                            </label>
+                            <label>
+                                  <input type="radio" name="color" value="green">
+                                  <span class="color-circle" style="background-color: #B259FF;"></span>
+                            </label>
+                            <label>
+                                  <input type="radio" name="color" value="yellow">
+                                  <span class="color-circle" style="background-color: #FF59F9;"></span>
+                            </label>
+                            <label>
+                                  <input type="radio" name="color" value="purple">
+                                  <span class="color-circle" style="background-color: #FF598b;"></span>
+                            </label>
+                            <label>
+                                  <input type="radio" name="color" value="orange">
+                                  <span class="color-circle" style="background-color:#FF5959 ;"></span>
+                            </label>
+                            <label>
+                                  <input type="radio" name="color" value="pink">
+                                  <span class="color-circle" style="background-color: #FF8B59;"></span>
+                            </label>
+                            <label>
+                                  <input type="radio" name="color" value="brown">
+                                  <span class="color-circle" style="background-color: #FFCD59;"></span>
+                            </label>
+                            <label>
+                                 <input type="radio" name="color" value="black">
+                                 <span class="color-circle" style="background-color: #E1FF59;"></span>
+                            </label>
+                            <label>
+                                 <input type="radio" name="color" value="white">
+                                 <span class="color-circle" style="background-color: #59FF91;"></span>
+                            </label>
+                            <label>
+                                <input type="radio" name="color" value="white">
+                                <span class="color-circle" style="background-color: #59FFF9;"></span>
+                            </label>
+                        </div>
+    
+                        </form>
+                    </fieldset>
+          
+                   <h3 style="margin-block: 1.75rem 1rem";>Tema do evento</h3>
+
+                      <form class="image-picker">
+                        <div class="tematic">
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image1">
+                                <div class="content">
+                                  <img src="asstes/images/Image-1.png" alt="Imagem 1">
+                                  <span class="title">Aniversário</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image2">
+                                <div class="content">
+                                  <img src="asstes/images/image-2.png" alt="Imagem 2">
+                                  <span class="title">Infantil</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image3">
+                                <div class="content">
+                                  <img src="asstes/images/Image-3.png" alt="Imagem 3">
+                                  <span class="title">Formatura</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image4">
+                                <div class="content">
+                                  <img src="asstes/images/Image-4.png" alt="Imagem 4">
+                                  <span class="title">Casamento</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image5">
+                                <div class="content">
+                                  <img src="asstes/images/Image-5.png" alt="Imagem 5">
+                                  <span class="title">Chá de bebê</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image6">
+                                <div class="content">
+                                  <img src="asstes/images/Image-6.png" alt="Imagem 6">
+                                  <span class="title">Chá de panela</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image7">
+                                <div class="content">
+                                  <img src="asstes/images/Image-7.png" alt="Imagem 7">
+                                  <span class="title">Carnaval</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image8">
+                                <div class="content">
+                                  <img src="asstes/images/Image-8.png" alt="Imagem 8">
+                                  <span class="title">Páscoa</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image9">
+                                <div class="content">
+                                  <img src="asstes/images/Image-9.png" alt="Imagem 9">
+                                  <span class="title">São joão </span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image10">
+                                <div class="content">
+                                  <img src="asstes/images/Image-10.png" alt="Imagem 10">
+                                  <span class="title">Halloween</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image11">
+                                <div class="content">
+                                  <img src="asstes/images/Image-11.png" alt="Imagem 11">
+                                  <span class="title">Natal</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="option">
+                              <label>
+                                <input type="radio" name="image" value="image12">
+                                <div class="content">
+                                  <img src="asstes/images/Image-12.png" alt="Imagem 12">
+                                  <span class="title">Outro</span>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </form>
+                            <!-- tentativa -->
+                            <div class="style-og"> <!-- form -->
+                              <div class="style-wrapper"> 
+                                <div class="style-contact">
+                                  <label for="toggle" style="font-family: var(--font-familyyy); font-size: .875rem; color: var(--text-body);">Estilo</label>
+                                </div>
+                                <div class="style-inner inp-1">
+                                  <label for="toggle" id="label-text">
+                                    <input type="checkbox" name="toggle" id="toggle">
+                                    <span class="style-copy">
+                                      <div class="style-ball-1"></div>
+                                      <div class="style-ball-2"></div>
+                                    </span>
+                                  </label>
+                                  <span id="toggle-text" style="font: var(--Body-Sm); color: #f9f9f9;">Escuro</span>
+                                </div>
+                              </div>
+                              <div class="file-wrapper">
+                                <div class="style-contact" id="foto">
+                                  <label for="file-id" style="font-family: var(--font-familyyy); font-size: .875rem; color: var(--text-body);">Foto de capa</label>
+                                </div>
+                                <div class="file-inner">
+                                  <label class="custom-file-label" for="file-id">
+                                    <img src="asstes/icons/upload-1.png" alt="">
+                                    Selecionar
+                                  </label>
+                                  <span class="file-name">Nenhum arquivo selecionado</span>
+                                  <input type="file" name="file-id" id="file-id">
+                                </div>
+                              </div>
+                            </div>
+                       
+                   
+
+                    <!--                    parte do contato                     -->
+
+                    <form class="contact">
+                      <fieldset class="field">
+                        <legend>
+                          <img src="asstes/icons/contact-new.png" alt="contato">
+                          <h2>Dados para contato</h2>
+                        </legend>
+                        <div class="name-wrapper">
+                          <label for="your-name">Nome</label>
+                          <input type="text" id="your-name" name="your-name" placeholder="Nome completo">
+                        </div>
+                        <div class="name-inner">
+                          <div class="name-input inp-1">
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" placeholder="exemplo@email.com">
+                          </div>
+                          <div class="name-input inp-2">
+                            <label for="tel">Telefone</label>
+                            <input type="text" id="tel" name="tel" placeholder="(99)99999-9999">
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>  
+                    <!-- Ultimo campo -->
+                    <form class="pessoal">
+                      
+                      <div class="pessoal-wrapper">
+                        <input type="checkbox" id="option1" name="options" value="1">
+                        <label for="option1">Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></label>
+                      </div>
+                      <div class="pessoal-wrapper">
+                        <input type="checkbox" id="option2" name="options" value="2">
+                        <label for="option2">Aceito receber atualizações e promoções por e-mail</label>
+                      </div>
+                      <div class="pessoal-wrapper">
+                        <input type="checkbox" id="option3" name="options" value="3">
+                        <label for="option3">Aceito receber atualizações e promoções por SMS</label>
+                      </div>
+                    </form>
+
+                    <form>
+                      <label for="sub" class="submit">
+                        <img src="asstes/icons/ticket-now.png" alt="ticket">
+                        <input type="submit" value="Gerar convite" id="sub" name="sub">
+                      </label>
+                    </form>
+
+                </div>
+            </main>
+        </div>
+
+        <aside>
+            <div class="aside">
+                <div class="intro">
+                    <img src="asstes/images/Logo.png" alt="festa">
+                    <h1>Festivite</h1>
+                    <p>Crie um convite digital para o seu evento</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+      document.getElementById('toggle').addEventListener('change', function() {
+          var toggleText = document.getElementById('toggle-text');
+          if (this.checked) {
+              toggleText.textContent = 'Claro';
+          } else {
+              toggleText.textContent = 'Escuro';
+          }
+      });
+  </script>
+   <script>
+    document.getElementById('file-id').addEventListener('change', function(event) {
+        const fileNameSpan = document.querySelector('.file-name');
+        const fileName = event.target.files.length > 0 ? event.target.files[0].name : 'Nenhum arquivo selecionado';
+        fileNameSpan.textContent = fileName;
+    });
+</script>
+
+</body>
+</html>
